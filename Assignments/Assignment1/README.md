@@ -92,4 +92,4 @@ You will need to submit the addresses of your deployed contracts. Please make su
 
 Because this code will be used in later parts, make sure you are able to interact with your smart contracts via Remix or Etherscan. Test the main functionalities of the tokens like `transfer`, `transferFrom`, and `mint`, `burn` for sAsset. Note that we use [Access Control](https://docs.openzeppelin.com/contracts/4.x/access-control) in sAsset to govern who can mint and burn tokens. The contract creator can grant minter and burner roles to other accounts by calling the `grantRole` function. You can select different accounts under *Account* to test these functions.
 
-Submit the etherscan links to the 5 contracts to this form : [SUBMISSION FORM](https://forms.gle/NBkHJzxqA9Tiuvkx7)
+Submit the etherscan links to the 5 contracts to this form : [SUBMISSION FORM](https://docs.google.com/forms/d/e/1FAIpQLSeHBvENyCbJ6T04epLCUO6y82z9rh3w4-2xvTgqm1KvRridRg/viewform?usp=header)
