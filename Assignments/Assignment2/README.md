@@ -58,7 +58,7 @@ We have interacted with testnet Sepolia and the local blockchain provided by Rem
 1. Install the prerequisite software:  [Node.js](https://nodejs.org/en/), and choose the LTS version (the one on the left).
 2. Install ganache-cli by running `npm install -g ganache-cli`. Then, run `ganache-cli` to run a node on your local blockchain. You can stop the node at any time with Ctrl-C.
 
-With ganache, you are able to debug in Remix: keep the ganache node running and set the environment in Remix as *Web3 Provider* with endpoint http://127.0.0.1:8545. Then for each transaction, you can click on the ''Debug'' button next to transactions in the Remix terminal and replay the function calls step by step.
+With ganache, you are able to debug in Remix: keep the ganache node running and set the environment in Remix as *Custom - External Http Provider* with endpoint http://127.0.0.1:8545. Then for each transaction, you can click on the ''Debug'' button next to transactions in the Remix terminal and replay the function calls step by step.
 
 ### Unit testing
 After finishing the contracts, you can test your implementation using Truffle.
@@ -67,10 +67,12 @@ After finishing the contracts, you can test your implementation using Truffle.
 2. Then, `cd Assignment2` and run `npm install` to install openzeppelin packages. To better understand the directory structure you can refer to this [tutorial](https://trufflesuite.com/tutorial/).
 3. Replace the `Mint.sol` contract in the `contracts` folder with your implementation. Run `truffle test`.
 
+Note: Truffle and Ganache are no longer maintained, so you may see deprecation warnings during `npm install` and a `µWS is not compatible with your Node.js build ... Falling back to a NodeJS implementation` message when running `truffle test`; these are harmless and can be safely ignored.
+
 Note: Do not change other files in `Assignment2`, the `PriceFeed.sol` provided here is a dumb price feed implementation used for testing that only returns a constant price. 
 
 
 
 ## Submission
-Rename the `Mint.sol` to `<your_netid>.sol` and submit it to [this form](https://forms.gle/q39w6CbirKCfpyBRA).  The grading will be conducted using truffle with more tests, including both valid and invalid operations (such as when the caller is not the owner of the position, withdrawal / mint that results in an under-collateralized CDP).
+Rename the `Mint.sol` to `<your_netid>.sol` and submit it to [this form](https://docs.google.com/forms/d/e/1FAIpQLSd05-ZXAuNJkJqJqiLOBDws1pwFCF0CKm1DU7gfvtZHB6qHpw/viewform?usp=header).  The grading will be conducted using truffle with more tests, including both valid and invalid operations (such as when the caller is not the owner of the position, withdrawal / mint that results in an under-collateralized CDP).
 
